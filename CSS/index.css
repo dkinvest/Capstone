@@ -30,7 +30,7 @@
 }
 .header .container{
     width: 100%;
-    padding: 10px 15px;
+    padding: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -98,14 +98,12 @@
 }
 
 /* EXCUTE */
-.execute .row-execute {
-    display: flex;
-}
+
+
 
 .execute .content-excute {
     position: relative;
     z-index: 1;
-    overflow: hidden;
     background: #ffffff;
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../Img/banner.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -113,34 +111,35 @@
     background-attachment: fixed;
     background-size: cover;
     display: grid;
-    padding-top: 5px;
 }
 
-.execute .container{
-    position: absolute;
+.execute .row-execute {
+    display: flex;
 }
 
-.subtitle {
+h6.subtitle {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     color: #dc4f72;
-    text-transform: uppercase;
     margin-bottom: 5px;
 }
 
-.subtitle1 {
+h3.subtitle1 {
     color: black;
     font-size: 46px;
     line-height: 1;
     font-weight: 700;
+    padding-bottom: 15px;
+    text-decoration: none;
 }
 
-.subtitle2 {
+h3.subtitle2 {
     color: black;
     font-size: 26px;
     line-height: 35px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .col-left-execute .p-execute {
@@ -160,16 +159,24 @@
 }
 
 /* WHY CHOOSE US */
-.header-center-chooseus {
+.chooseus {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.chooseus .container {
     text-align: center;
 }
 
-.p-info-chooseus {
+.header-center-chooseus {
     width: 50%;
+    display: inline-block;
+    padding-bottom: 50px;
 }
 
 .row-chooseus {
     display: flex;
+    text-decoration: none;
 }
 .col-chooseus {
     border-radius: 10px;
@@ -179,17 +186,17 @@
     border: 3px solid transparent;
     cursor: pointer;
     text-align: center;
+    margin-right: 30px;
 }
 
 .col-chooseus:hover {
     transition: all 0.3s ;
     background-color: #ffffff;
     border: 1px solid #eee;
-    border-image: url(../Image/br.png) 1 round;
     transform: translateY(-10px);
 }
 
-.img-sign {
+.img {
     max-width: 100%;
     height: auto;
 }
@@ -205,6 +212,140 @@
     text-decoration: none;
 }
 
+/* ABOUT */
+.about {
+    background-color: #f7f9fc;
+    padding: 50px 0;
+}
+.about .row-about {
+    display: flex;
+}
+
+.about .col-left-about {
+    width: 50%;
+    display: inline-block;
+}
+
+.button__color {
+    transition: all 0.3s;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    border-radius: 5px;
+    border-color: #dc4f72;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #dc4f72;
+    cursor: pointer;
+}
+
+.button__color:hover {
+    background-color: #dc3545;
+}
+
+.img-shadow {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.img-shadow:hover {
+    transform: translateY(-10px);
+}
+
+
+.number {
+    padding: 80px 0 20px 0;
+}
+
+.number .row-number {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.col-number {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    transition: all 0.3s;
+    border: 1px solid #eee;
+    margin: 0 15px 0 15px;
+}
+
+.number .subtitle3 {
+    font-size: 16px;
+    line-height: 24.5px;
+    color: black;
+    font-weight: 700;
+}
+
+.number .p-counter {
+    font-size: 50px;
+    line-height: 1;
+    color: #dc4f72;
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+/* WE ARE TRUE */
+.content-wearetrue {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../Img/bg.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 480px;
+    display: grid;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.wearetrue .item-wearetrue h2 {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.item-wearetrue {
+    max-width: 550px;
+}
+
+.p-wearetrue {
+    font-size: 16px;
+    color: #eee;
+    line-height: 24.5px;
+    margin-bottom: 50px;
+}
+
+.button__color2 {
+    transition: all 0.3s;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    border-radius: 5px;
+    border-color: #f8f9fa;
+    border: 1px solid transparent;
+    color: black;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.button__color2:hover {
+    background-color:#cccecf;
+}
 
 
 
